@@ -15,10 +15,10 @@
 #
 
 # Inherit from the common tree
-$(call inherit-product, device/samsung/exynos9810-common/common.mk)
+$(call inherit-product, device/samsung/universal9611-common/common.mk)
 
 # Inherit proprietary files
-$(call inherit-product, vendor/samsung/starlte/starlte-vendor.mk)
+$(call inherit-product, vendor/samsung/m21/m21-vendor.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)

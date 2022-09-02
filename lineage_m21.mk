@@ -20,21 +20,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Product API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
-# Inherit from starlte device
-$(call inherit-product, device/samsung/starlte/device.mk)
+# Inherit from m21 device
+$(call inherit-product, device/samsung/m21/device.mk)
 
 # Boot Animation
-TARGET_SCREEN_HEIGHT := 2960
-TARGET_SCREEN_WIDTH := 1440
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
 
 ## Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := lineage_starlte
-PRODUCT_DEVICE := starlte
+PRODUCT_NAME := lineage_m21
+PRODUCT_DEVICE := m21
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-G960F
+PRODUCT_MODEL := SM-M215F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung

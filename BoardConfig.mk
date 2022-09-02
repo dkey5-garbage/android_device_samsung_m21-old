@@ -14,12 +14,12 @@
 # limitations under the License.
 
 ## Inherit from the common tree
-include device/samsung/exynos9810-common/BoardConfigCommon.mk
+include device/samsung/universal9611-common/BoardConfigCommon.mk
 
 ## Inherit from the proprietary configuration
-include vendor/samsung/starlte/BoardConfigVendor.mk
+include vendor/samsung/m21/BoardConfigVendor.mk
 
-DEVICE_PATH := device/samsung/starlte
+DEVICE_PATH := device/samsung/m21
 
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -28,10 +28,10 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Display
-TARGET_SCREEN_DENSITY := 560
+TARGET_SCREEN_DENSITY := 403
 
 # Kernel
-TARGET_KERNEL_CONFIG := exynos9810-starlte_defconfig
+TARGET_KERNEL_CONFIG := exynos9611-m21_defconfig
 
 # properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
